@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC E-store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,200;1,400;1,800&family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"></a><img src="./6744a3bdc17d45f58dfa6752d5bbcc66.png" alt="UC-logo" height="30">
+    
+    
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product.html">product</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><a href="./account.html">account</a></li>
+    
+    
+                </ul>
+    
+            </nav>
+            <img href="./cart.html" src="./images/cart.png" width="30px" height="30px">
+            <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+    </div>
+    </div>
+
+    <!-- -------- cart items details -------- -->
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/buy-1.jpg">
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: N50,000</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>N50,000</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/buy-2.jpg">
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: N40,000</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>N40,000</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/buy-3.jpg">
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: N35,000</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>N35,000</td>
+
+            </tr>
+
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>N20,0000</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>N2000</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>N200,0000</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+
+    </div>
+
+     <!-- ---------- footer-----------  -->
+
+     <div class="footer" >
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="./images/play-store.png" alt="">
+                        <img src="./images/app-store.png" alt="">
+
+                    </div>
+
+                </div>
+                <div class="footer-col-2">
+                   <img src="./6744a3bdc17d45f58dfa6752d5bbcc66.png" alt="" height="100">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and <br> 
+                    Benefits of items Accessible to many.</p>
+
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                    
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                    
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">copyright 2023 - Ucheson</p>
+
+
+        </div>
+
+     </div>
+
+     <!-- ------------- js for toggle menu ---------- -->
+  <script>
+    let menuItems = document.getElementById("menuItems");
+
+    menuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(menuItems.style.maxHeight == "0px"){
+            
+            menuItems.style.maxHeight = "200px"
+        }
+        else{
+            menuItems.style.maxHeight = "0px"
+        }
+    }
+
+    
+
+  </script>
+</body>
+</html>
